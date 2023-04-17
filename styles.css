@@ -1,0 +1,190 @@
+:root {
+    --navy: rgb(18, 49, 65);
+    --mint: rgb(120, 241, 202);
+    --gray: rgb(173, 188, 197)
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+    transition: 0.3s;
+}
+
+body {
+    margin: 0 auto;
+    padding: 0;
+    height: 100%;
+    width: 80%;
+    background-color: var(--navy);
+    font-family: 'Inter', sans-serif;
+}
+
+.header, .footer {
+    margin: 4rem 0;
+}
+
+.main * {
+    margin-bottom: 3rem;
+}
+
+h1 {
+    font-family: 'Sen', sans-serif;
+    color: var(--mint);
+    font-size: 15rem;
+}
+
+span {
+    transition: 0s;
+}
+
+span#behind {
+    position: relative;
+    z-index: -2;
+}
+
+p, .twitter-link {
+    color: var(--gray);
+    text-decoration: none;
+    font-size: 2.3rem;
+    max-width: 50rem;
+}
+
+.btn {
+    background-color: var(--mint);
+    color: var(--navy);
+    border-radius: 5px;
+    border: none;
+    padding: 1.7rem 2rem;
+    font-size: 2.3rem;
+    font-weight: 600;
+}
+
+.footer {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+}
+
+@media (max-width: 1050px) {
+    body {
+        margin: 0 auto;
+        padding: 0;
+        width: 90%;
+    }
+
+    h1 {
+        font-size: 9rem;
+    }
+
+    .footer, .main {
+        margin-top: 11rem;
+    }
+
+    #extra {
+        display: none;
+    }
+}
+
+@media (max-width: 650px) {
+    h1 {
+        font-size: 6rem;
+    }   
+}
+
+/* Icon Placemenet */
+
+.icons img {
+    position: absolute;
+    z-index: -1;
+}
+
+#user-one {
+    top: 10rem;
+    left: 4rem;
+}
+
+#user-two {
+    top: 4rem;
+    right: 17rem;
+}
+
+#user-three {
+    top: 7.5rem;
+    right: 40rem;
+}
+
+#user-four {
+    top: 37rem;
+    right: 58rem;
+}
+
+#user-five {
+    top: 35rem;
+    right: 17.5rem;
+}
+
+#user-six {
+    bottom: 7rem;
+    right: 22rem;
+}
+
+@media (max-width: 1050px) {
+    #user-one {
+        top: 8rem;
+        left: 4rem;
+    }
+    
+    #user-two {
+        top: 3rem;
+        right: 10rem;
+    }
+    
+    #user-three {
+        top: 15rem;
+        right: 30rem;
+    }
+    
+    #user-four {
+        top: 37rem;
+        right: 15rem;
+    }
+    
+    #user-five {
+        top: 25rem;
+        right: 10rem;
+    }
+    
+    #user-six {
+        bottom: 2rem;
+        right: 12rem;
+    }
+}
+
+@media (max-width: 650px) {
+    #user-three, #user-five, #user-six {
+        display: none;
+    }
+
+    #user-one {
+        width: 11rem;
+        height: auto;
+        left: 7rem;
+    }
+
+    #user-two {
+        top: 7rem;
+        right: 3rem;
+    }
+
+    #user-four {
+        width: 18rem;
+        height: auto;
+        top: 50rem;
+        right: 0;
+    }
+}
